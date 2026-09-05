@@ -1,0 +1,50 @@
+{
+  "verification_date": "2026-09-05",
+  "tests": {
+    "runner": "python -m unittest discover -s tests -v",
+    "passed": 13,
+    "failed": 0
+  },
+  "syntax_check": {
+    "python_files_parsed": 14,
+    "status": "passed"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "scope": "Offline tests and fictional fixtures only. No real-world quality or production-deployment claim.",
+  "end_to_end": {
+    "status": "passed",
+    "fictional_articles": 6,
+    "fixture_questions": 3,
+    "encoder": "demo-hash-v1",
+    "engine": "numpy",
+    "steps": [
+      "clean",
+      "deduplicate",
+      "chunk",
+      "encode",
+      "persist index",
+      "load index",
+      "retrieve",
+      "compute Recall@K"
+    ]
+  },
+  "not_executed": [
+    "Financial PhraseBank download",
+    "FinBERT/RoBERTa training",
+    "Sentence Transformer embedding",
+    "FAISS runtime",
+    "live Gemini API",
+    "Streamlit browser validation",
+    "online hosting"
+  ],
+  "packaging": {
+    "status": "passed",
+    "method": "editable installation using existing dependencies; no index/network"
+  }
+}

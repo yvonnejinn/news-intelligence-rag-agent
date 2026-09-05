@@ -1,0 +1,1 @@
+All six articles and three questions are fictional test fixtures authored for this repository. Empty source URLs are intentional. Demo retrieval is a deterministic lexical hash encoder, not Sentence Transformer/FAISS quality evidence. Use pipe-separated relevant chunk IDs in evaluation CSVs. Keep reviewed real-world evaluation data separate from training.

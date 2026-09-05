@@ -1,0 +1,73 @@
+{
+  "query_count": 3,
+  "index_metadata": {
+    "encoder": "demo-hash-v1",
+    "revision": null,
+    "dataset_sha256": "2aaddfa0dc591f105e824dc0adea472ebc4c36cc31ceeb4ec2f98e22e27a878c",
+    "chunk_size": 160,
+    "overlap": 30,
+    "demo": true,
+    "dimensions": 256
+  },
+  "engine": "numpy",
+  "evaluation_sha256": "ac9f921eee16b05fc7a84960a0e503a9ae84fe5ae3bf0adee53542bb11443651",
+  "metrics": {
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0
+  },
+  "queries": [
+    {
+      "question": "Which company reported higher profit and earnings?",
+      "retrieved_ids": [
+        "demo-profit:0",
+        "demo-solar:0",
+        "demo-factory:0",
+        "demo-rates:0",
+        "demo-rail:0"
+      ],
+      "relevant_ids": [
+        "demo-profit:0"
+      ],
+      "latency_seconds": 0.0003040080000573653,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0
+    },
+    {
+      "question": "What happened to central bank interest rates?",
+      "retrieved_ids": [
+        "demo-rates:0",
+        "demo-profit:0",
+        "demo-solar:0",
+        "demo-factory:0",
+        "demo-rail:0"
+      ],
+      "relevant_ids": [
+        "demo-rates:0"
+      ],
+      "latency_seconds": 7.326400009333156e-05,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0
+    },
+    {
+      "question": "What interrupted factory manufacturing production?",
+      "retrieved_ids": [
+        "demo-factory:0",
+        "demo-solar:0",
+        "demo-wheat:0",
+        "demo-profit:0",
+        "demo-rates:0"
+      ],
+      "relevant_ids": [
+        "demo-factory:0"
+      ],
+      "latency_seconds": 4.35830002061266e-05,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0
+    }
+  ],
+  "scope": "Demo fixture only"
+}
